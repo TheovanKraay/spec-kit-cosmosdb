@@ -171,6 +171,9 @@ provides:
   - name: speckit.cosmosdb.advise
     file: commands/speckit.cosmosdb.advise.md
     description: Analyze the active spec/tasks and recommend only the relevant Azure Cosmos DB commands to run during implementation.
+  instructions:
+  - file: instructions/cosmosdb-best-practices.md
+    description: Always-on Azure Cosmos DB best-practice rules, composed into the agent's context file by the agent-context extension (github/spec-kit#4200).
 hooks:
   before_implement:
     command: speckit.cosmosdb.advise
